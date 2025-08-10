@@ -164,14 +164,20 @@ Figure 10: The web page loaded successfully despite firewall rules, as web Brows
  
 ## Conclusion
 A thorough introduction to network principles has been given by this project, which is especially designed for a household setting with a laptop and a smartphone connected via a wireless router. The theoretical component provided a fundamental grasp of fundamental networking principles, such as the importance of the Data Link Layer in guaranteeing dependable communication, the differences between MAC and IP addresses, and the automated effectiveness of DHCP in assigning IP addresses. Along with exploring different network topologies and transmission methods, it also covered the various functions of key home network devices, such as modems, routers, switches, and wireless access points. It also highlighted the benefits and drawbacks of wired versus wireless connections and the development of Wi-Fi standards.
+
 The project's practical component effectively illustrated how to use Cisco Packet Tracer to simulate this home network. From creating the architecture and linking devices to setting up IP addresses and confirming connection, this practical experience was priceless. Through testing and debugging without affecting a live network, Packet Tracer provided a secure, iterative learning environment. This real-world example demonstrated how DHCP's automated IP address assignment is essential to the "plug-and-play" ease of use of contemporary residential networks, greatly lowering the complexity for end users.
+
 Additionally, the research investigated network traffic analysis with the PDU inspector and built-in stimulation mode. This potent tool allowed for direct packet flow monitoring for DHCP, ARP, and ICMP, giving users concrete insight into the abstract realm of network protocols. This capacity to see directly is revolutionary for debugging and comprehending protocol behaviour. However, there are restrictions on the simulation environment. It is unable to simulate encrypted protocols or intricate, real-world traffic situations, such as VPN encryption or SSL/TLS. Sensitive information like DNS searches, login passwords, and web requests are therefore kept visible throughout the simulation, highlighting how simple it is to examine or intercept unsecured communications. This restriction emphasises how crucial it is to use safe, encrypted protocols (like HTTPS, SSH, and SSL/TLS) in practical networking settings. To preserve data security and integrity, simulation tools are crucial for learning and conceptual comprehension, but they also highlight the necessity of encryption in real-world deployments.
+
 The analysis of network traffic shows a basic series of actions necessary for IP-based communication: ARP and data plane traffic (ICMP) are used to resolve MAC addresses.
 
 First, communication between the home router (208.67.220.1, MAC: 0090.2BAA.2101) and the ISP server (208.67.220.220, MAC: 0001.C9C3.0179) is required. The ISP server broadcasts an ARP request (Opcode 0x0001) with the destination MAC of FFFF.FFFF. FFFF since it is unaware of the home router's MAC address. The query "Who has 208.67.220.1?" is posed in this request. After receiving this broadcast, the home router creates an ARP reply (Opcode 0x0002) after identifying its own IP address as the destination. This response provides its own MAC address (0090.2BAA.2101) and is unicast straight back to the MAC address of the ISP server.
 The ISP server maps the IP address of the home router to its MAC address by updating its ARP cache after receiving the ARP reply. Subsequent Layer 3 (IP) communication is made possible by this successful address resolution. The ISP server next sends a Type 0x08 ICMP Echo Request (ping) packet to a device on the home network (192.168.0.101) to demonstrate this. This IP packet shows that the first ARP exchange successfully set up the network for data traffic flow. It is now appropriately encapsulated, with the MAC address of the home router as the next hop.
+
 To sum up, this traffic flow effectively demonstrates how important ARP is for dynamic MAC address learning inside a local segment, serving as a need for the delivery of future IP packets. Understanding these basic protocol interactions is necessary for effective network monitoring and analysis to detect connectivity problems, spot configuration errors, and guarantee effective data movement between network devices such as home routers and ISP servers. The foundation of device communication on an IP network is this procedure.
+
 Packet Tracer offers a very realistic and efficient environment for learning and experimenting with network configurations while evaluating the efficacy of the simulated network and the fundamental security measures. The effectiveness of this virtual environment as a teaching aid is confirmed by the successful setup and connectivity testing.
+
 This project details the implementation of router-level and host-based firewall configurations to strengthen the simulated Packet Tracer home network. The Wireless Router's GUI was used to configure security features like MAC filtering and port forwarding, while host-based firewall rules were configured on a laptop. The practical application of these concepts in the Packet Tracer environment provides a concrete understanding of how firewalls operate and protect networks. The project's foundational knowledge serves as a springboard for exploring advanced concepts like network segmentation using VLANs, intrusion detection systems, and VPN integration. Consistent application of best practices, such as strong Wi-Fi security, regular firmware updates, and secure protocols, is crucial for maintaining a resilient defense. By taking these actions, the fundamental knowledge and useful skills gained from this project would be strengthened, resulting in a home network that is more secure, effective, and robust.
 
 
@@ -210,8 +216,13 @@ This project details the implementation of router-level and host-based firewall 
 
 
 ## Summary
-The University of Information Technology and Management in Rzeszów Faculty of Applied Information Technology Diploma Thesis Summary
-Thesis title in English: Introduction to Home Networks: Simulation and Analysis
-Author: PRINCESS KAMERE
-Key words: Home network, Packet Tracer
+#### The University of Information Technology and Management in Rzeszów Faculty of Applied Information Technology Diploma Thesis Summary
+
+#### Thesis title in English: Introduction to Home Networks: Simulation and Analysis
+
+#### Author: PRINCESS KAMERE
+
+#### Key words: Home network, Packet Tracer
+
+
 This project provides a comprehensive overview of home networking, focusing on theoretical foundations, practical simulation, and traffic analysis. It details core networking concepts, device functions, and topologies. The report documents the simulation of a laptop and smartphone home network in Cisco Packet Tracer, including IP configuration and connectivity testing. It finally demonstrates network traffic analysis in the stimulation mode, highlighting protocol operations and security implications of unencrypted data. 
