@@ -105,9 +105,10 @@ MyLaptop	192.168.0.103	255.255.255.0	192.168.0.1	Wireless
 HomeRouter	192.168.0.1	255.255.255.0	N/A	Wireless
 ISPServer	208.67.220.220	255.255.255.0	208.67.220.1	FastEthernet0
 
- 
-Figure 2: Testing Network Connectivity
-Source: Own
+ ![Testing Network Connectivity](images/Figure_2_Connectivity_Test.png)
+##### Figure 2: Testing Network Connectivity
+###### Source: Own
+
 Figure 2 is essential proof that the simulated home network's end-to-end connection worked. It shows that the laptop's ICMP Echo Request reached the server after successfully navigating the home network, cable modem, and ISP cloud. The server's response was then appropriately sent back to the laptop. The full communication cycle is confirmed by the visible ICMP Echo Reply in the packet data.
 
 ### 2.3. Network Traffic Analysis 
