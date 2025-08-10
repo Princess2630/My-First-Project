@@ -97,13 +97,15 @@ This section offers an explanation by step on how to use Cisco Packet Tracer, a 
 
 ### 2.2 IP Configuration and Connectivity Verification
 After building the topology, the next critical step is to configure the IP addresses and verify that all devices can communicate effectively within the simulated network.
-Table 1: Simulated Home Network Addressing Table
+#### Table 1: Simulated Home Network Addressing Table
 This table documents the network configuration, providing a clear reference for IP assignments and device roles within the simulated environment.
-Device Name	IP Address                    	Subnet Mask	Default Gateway	Interface
-MySmartphone	192.168.0.101	255.255.255.0	192.168.0.1	Wireless
-MyLaptop	192.168.0.103	255.255.255.0	192.168.0.1	Wireless
-HomeRouter	192.168.0.1	255.255.255.0	N/A	Wireless
-ISPServer	208.67.220.220	255.255.255.0	208.67.220.1	FastEthernet0
+
+Device Name	     IP Address            Subnet Mask         	Default Gateway	    Interface
+MySmartphone  	192.168.0.101        	255.255.255.0	        192.168.0.1	         Wireless
+MyLaptop      	192.168.0.103        	255.255.255.0	        192.168.0.1	         Wireless
+HomeRouter	    192.168.0.1	          255.255.255.0        	N/A	                 Wireless
+ISPServer	     208.67.220.220	       255.255.255.0        	208.67.220.1       	FastEthernet0
+
 
  ![Testing Network Connectivity](images/Figure_2_Connectivity_Test.png)
 ##### Figure 2: Testing Network Connectivity
