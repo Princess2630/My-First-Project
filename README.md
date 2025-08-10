@@ -116,7 +116,7 @@ Figure 2 is essential proof that the simulated home network's end-to-end connect
 ### 2.3. Network Traffic Analysis 
 This section explores how the packet tracer built-in Stimulation mode may be used to record and examine network traffic in a home network simulation. Direct monitoring of protocol processes is made possible by this method, which turns intangible networking notions into concrete facts.
 
- ![ARP Request](images/Figure_3_ARP_Request.png)
+![ARP Request](images/Figure_3_ARP_Request.png)
 ##### Figure 3: ARP Request
 ###### Source: Own
 
