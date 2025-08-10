@@ -88,11 +88,9 @@ Combining the features of a modem, router, switch, and wireless access point int
 This section offers an explanation by step on how to use Cisco Packet Tracer, a potent network simulation tool, to design, construct, and configure a simple home network. The procedures for configuring IP addresses and confirming network connectivity will also be covered.
 
 ### 2.1.	Designing and Building the Home Network Topology
-
-Figure 1: Cisco Packet Tracer Network Diagram
-Source: Own
 ![Cisco Packet Tracer Network Diagram](images/Figure_1_Network_Diagram.png)
-Figure 1 presents a graphical representation of the simulated home network topology in Cisco Packet Tracer. This diagram visually depicts the Wireless Router, Laptop, Smartphone, Internet Cloud, and Server, along with the physical and wireless connections between them. Device labels and connection types are clearly indicated, providing an immediate and intuitive understanding of the network's structure and how its components are interconnected.
+
+##### Figure 1 presents a graphical representation of the simulated home network topology in Cisco Packet Tracer. This diagram visually depicts the Wireless Router, Laptop, Smartphone, Internet Cloud, and Server, along with the physical and wireless connections between them. Device labels and connection types are clearly indicated, providing an immediate and intuitive understanding of the network's structure and how its components are interconnected.
 
 ### 2.2 IP Configuration and Connectivity Verification
 After building the topology, the next critical step is to configure the IP addresses and verify that all devices can communicate effectively within the simulated network.
