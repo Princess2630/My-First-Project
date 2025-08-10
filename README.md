@@ -90,6 +90,9 @@ This section offers an explanation by step on how to use Cisco Packet Tracer, a 
 ### 2.1.	Designing and Building the Home Network Topology
 ![Cisco Packet Tracer Network Diagram](images/Figure_1_Network_Diagram.png)
 
+Figure 1: Cisco Packet Tracer Network Diagram
+Source: Own
+
 ##### Figure 1 presents a graphical representation of the simulated home network topology in Cisco Packet Tracer. This diagram visually depicts the Wireless Router, Laptop, Smartphone, Internet Cloud, and Server, along with the physical and wireless connections between them. Device labels and connection types are clearly indicated, providing an immediate and intuitive understanding of the network's structure and how its components are interconnected.
 
 ### 2.2 IP Configuration and Connectivity Verification
